@@ -1,0 +1,90 @@
+═══════════════════════════════════════════════════════════
+        🔧 GITHUB PAGES - CONFIGURATION FIX
+═══════════════════════════════════════════════════════════
+
+PROBLEM: You're seeing the README.md instead of the site
+
+REASON: GitHub Pages is set to "Deploy from branch" 
+        instead of "GitHub Actions"
+
+═══════════════════════════════════════════════════════════
+
+✅ SOLUTION (3 Simple Steps):
+───────────────────────────────────────────────────────────
+
+STEP 1: Go to Settings
+───────────────────────────────────────────────────────────
+https://github.com/tylermaginnis/xXfGlUx/settings/pages
+
+
+STEP 2: Change the Source
+───────────────────────────────────────────────────────────
+Find: "Build and deployment"
+
+Under "Source", you'll see a dropdown that currently says:
+  ❌ "Deploy from a branch"
+
+Click it and change to:
+  ✅ "GitHub Actions"
+
+
+STEP 3: Save & Wait
+───────────────────────────────────────────────────────────
+• Click the "Save" button (if there is one)
+• Wait 2-3 minutes
+• Go to: https://github.com/tylermaginnis/xXfGlUx/actions
+• You should see a workflow running
+
+═══════════════════════════════════════════════════════════
+
+📊 VERIFY IT'S WORKING:
+───────────────────────────────────────────────────────────
+
+1. Check Actions tab:
+   https://github.com/tylermaginnis/xXfGlUx/actions
+   
+   You should see:
+   • "Deploy Next.js to GitHub Pages" workflow
+   • Green checkmark when done
+
+2. Visit your site:
+   https://tylermaginnis.github.io/xXfGlUx
+   
+   You should see:
+   • AccessVLC homepage
+   • Interactive membership cards
+   • NOT the README.md
+
+═══════════════════════════════════════════════════════════
+
+⏱️  TIMELINE:
+───────────────────────────────────────────────────────────
+0:00 - Change Source to "GitHub Actions"
+0:05 - Workflow starts automatically
+2:00 - Build completes
+2:30 - Site is live!
+
+═══════════════════════════════════════════════════════════
+
+🆘 TROUBLESHOOTING:
+───────────────────────────────────────────────────────────
+
+If you still see the README after 5 minutes:
+
+1. Make sure you selected "GitHub Actions" (not branch)
+2. Check Actions tab for any failed builds
+3. Try triggering manually:
+   - Go to Actions tab
+   - Click "Deploy Next.js to GitHub Pages"
+   - Click "Run workflow"
+
+═══════════════════════════════════════════════════════════
+
+💡 WHY THIS HAPPENED:
+───────────────────────────────────────────────────────────
+
+By default, GitHub Pages deploys from a branch (shows raw 
+files like README.md). We need it to use GitHub Actions to
+build the Next.js app first, THEN deploy the built site.
+
+═══════════════════════════════════════════════════════════
