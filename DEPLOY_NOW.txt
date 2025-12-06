@@ -1,0 +1,53 @@
+═══════════════════════════════════════════════════
+        🚀 DEPLOY TO GITHUB PAGES - QUICK START
+═══════════════════════════════════════════════════
+
+📍 STEP 1: Run the deployment script
+───────────────────────────────────────────────────
+cd /home/user/Projects/AccessVLC_Proto/frontend
+./deploy-to-github.sh
+
+═══════════════════════════════════════════════════
+
+📍 STEP 2: Enable GitHub Pages (First time only)
+───────────────────────────────────────────────────
+1. Go to: https://github.com/tylermaginnis/xXfGlUx
+2. Click: Settings → Pages
+3. Source: Select "GitHub Actions"
+4. Click: Save
+
+═══════════════════════════════════════════════════
+
+✅ DONE! Your site will be live at:
+───────────────────────────────────────────────────
+🌐 https://tylermaginnis.github.io/xXfGlUx
+
+(Wait 2-3 minutes for first deployment)
+
+═══════════════════════════════════════════════════
+
+📋 WHAT WAS SET UP:
+───────────────────────────────────────────────────
+✓ deploy-to-github.sh     - Deployment script
+✓ .github/workflows/      - Auto-deploy on push
+✓ next.config.mjs         - Static export config
+✓ README.md               - Project documentation
+✓ DEPLOY_GUIDE.md         - Full deployment guide
+
+═══════════════════════════════════════════════════
+
+🔐 DEMO CREDENTIALS (on live site):
+───────────────────────────────────────────────────
+demo / demo              - Gold Member (quickest)
+admin@vlc.com / admin123 - Admin Dashboard
+black@vlc.com / black123 - Black Member
+
+═══════════════════════════════════════════════════
+
+🔄 TO UPDATE THE SITE LATER:
+───────────────────────────────────────────────────
+Just run: ./deploy-to-github.sh
+
+Changes go live in 2-3 minutes automatically!
+
+═══════════════════════════════════════════════════
