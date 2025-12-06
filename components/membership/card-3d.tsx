@@ -2,7 +2,9 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
+
+// Get the base path for GitHub Pages
+const basePath = process.env.NODE_ENV === 'production' ? '/xXfGlUx' : '';
 
 interface Card3DProps {
   tier: 'GOLD' | 'BLACK';
@@ -133,11 +135,9 @@ export function Card3D({
                   ? 'bg-yellow-800/30 border-2 border-yellow-700' 
                   : 'bg-white/10 border-2 border-white/20'
               )}>
-                <Image 
-                  src="/vlx-icon.png" 
+                <img 
+                  src={`${basePath}/vlx-icon.png`}
                   alt="Access VLX"
-                  width={48}
-                  height={48}
                   className="w-full h-full object-contain"
                   style={{ filter: isGold ? 'brightness(0.6) sepia(1) hue-rotate(25deg) saturate(2)' : 'brightness(1.2)' }}
                 />
@@ -168,11 +168,9 @@ export function Card3D({
 
             {/* Decorative Elements */}
             <div className="absolute bottom-4 right-4 opacity-20 w-24 h-24">
-              <Image 
-                src="/vlx-icon.png" 
+              <img 
+                src={`${basePath}/vlx-icon.png`}
                 alt="Access VLX"
-                width={96}
-                height={96}
                 className="w-full h-full object-contain"
                 style={{ filter: isGold ? 'brightness(0.4) sepia(1) hue-rotate(25deg) saturate(2)' : 'brightness(0.8)' }}
               />

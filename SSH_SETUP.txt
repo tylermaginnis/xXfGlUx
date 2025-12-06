@@ -1,0 +1,45 @@
+═══════════════════════════════════════════════════════════
+           🔑 GITHUB SSH KEY SETUP
+═══════════════════════════════════════════════════════════
+
+✅ SSH Key Generated: ~/.ssh/id_ed25519
+
+📋 YOUR PUBLIC KEY:
+───────────────────────────────────────────────────────────
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJX7uYPnbqmLOucLsWpru4IXFYM+AF8nY0pYKOFYz4dB maginnist@gmail.com
+───────────────────────────────────────────────────────────
+
+📖 HOW TO ADD TO GITHUB:
+───────────────────────────────────────────────────────────
+1. Visit: https://github.com/settings/ssh/new
+
+2. Title: AccessVLC Deploy Key (or any name)
+
+3. Key Type: Authentication Key
+
+4. Key: Copy the public key above
+
+5. Click: "Add SSH key"
+
+───────────────────────────────────────────────────────────
+
+🚀 AFTER ADDING KEY TO GITHUB:
+───────────────────────────────────────────────────────────
+cd /home/user/Projects/AccessVLC_Proto/frontend
+./deploy-to-github.sh
+
+───────────────────────────────────────────────────────────
+
+🌐 YOUR LIVE SITE:
+───────────────────────────────────────────────────────────
+https://tylermaginnis.github.io/xXfGlUx
+
+───────────────────────────────────────────────────────────
+
+✅ ONE-TIME SETUP (after first push):
+───────────────────────────────────────────────────────────
+Go to: https://github.com/tylermaginnis/xXfGlUx/settings/pages
+Source: Select "GitHub Actions"
+Click: Save
+
+═══════════════════════════════════════════════════════════
