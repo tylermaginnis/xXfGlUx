@@ -18,14 +18,14 @@ export default function MembershipPage() {
 
           {/* Digital Card Showcase */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Your Digital Membership Card</h2>
-            <p className="text-muted-foreground mb-12 text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">Your Digital Membership Card</h2>
+            <p className="text-sm md:text-base text-muted-foreground mb-8 md:mb-12 text-center max-w-2xl mx-auto px-4">
               Each membership tier comes with a stunning 3D digital card. Hover to see the interactive effect, 
               or click to flip and view the back.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-center text-primary">Gold Card</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="space-y-4 px-4">
+                <h3 className="text-xl md:text-2xl font-semibold text-center text-primary">Gold Card</h3>
                 <Card3D
                   tier="GOLD"
                   memberName="JOHN DOE"
@@ -33,8 +33,8 @@ export default function MembershipPage() {
                   interactive={true}
                 />
               </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-center text-primary">Black Card</h3>
+              <div className="space-y-4 px-4">
+                <h3 className="text-xl md:text-2xl font-semibold text-center text-primary">Black Card</h3>
                 <Card3D
                   tier="BLACK"
                   memberName="JANE SMITH"

@@ -64,7 +64,7 @@ export function Card3D({
     <div
       ref={cardRef}
       className={cn(
-        'relative w-full max-w-md mx-auto cursor-pointer perspective-1000',
+        'relative w-full max-w-md cursor-pointer perspective-1000',
         className
       )}
       onClick={() => interactive && setIsFlipped(!isFlipped)}

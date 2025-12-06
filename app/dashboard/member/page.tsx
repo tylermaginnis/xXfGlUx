@@ -58,9 +58,9 @@ function MemberDashboardContent() {
 
       {/* Digital Membership Card */}
       {user?.tier && (
-        <div className="bg-secondary border border-border rounded-lg p-8">
-          <h2 className="text-2xl font-semibold mb-6 text-center">Your Membership Card</h2>
-          <div className="flex justify-center">
+        <div className="bg-secondary border border-border rounded-lg p-4 md:p-8">
+          <h2 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center">Your Membership Card</h2>
+          <div className="flex justify-center px-2">
             <Card3D
               tier={user.tier}
               memberName={memberName}
@@ -68,7 +68,7 @@ function MemberDashboardContent() {
               interactive={true}
             />
           </div>
-          <p className="text-center text-sm text-muted-foreground mt-4">
+          <p className="text-center text-xs md:text-sm text-muted-foreground mt-4">
             Click the card to flip it • Hover to see 3D effect
           </p>
         </div>
